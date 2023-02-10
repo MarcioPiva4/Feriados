@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/tabela.css" />
+  <link rel="stylesheet" href="/css/animação.css" />
+  <!-- CSS SWIPER-JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- JS -->
+  <script src="/js/swiper.js" defer></script>
+  <script src="/js/zoom.js" defer></script>
+  <!-- JS SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/39965348f9.js" crossorigin="anonymous"></script>
+
+  <title>Feriados</title>
+</head>
+
+<body>
+  <!-- ANIMAÇÃO -->
+  <div class="animation_container">
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+  </div>
+  <!-- FIM ANIMAÇÃO -->
+
+  <header>
+    <h1> FERIADOS 1º SEMESTRE 2023</h1>
+  </header>
+
+
+  <main>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container_preview">
+            <img src="/imgs/Carnaval_perfil.jpg" class="img_perfil" />
+          </div>
+          <h1 class="title_slide">Carnaval</h1>
+          <p>
+            O Carnaval é um período de festas populares realizadas durante o dia e à noite.
+            As comemorações ocorrem todos os anos, nos meses de fevereiro ou março, começando
+            no sábado e estendendo-se até a Terça-feira de Carnaval.
+          </p>
+          <a href="/html/feriados.html"><button class="btn_mais">Ler mais</button></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="container_preview">
+            <img src="/imgs/pascoa_profile.jpg" class="img_perfil" />
+          </div>
+          <h1 class="title_slide">Páscoa</h1>
+          <p>
+            A Páscoa ou Domingo da Ressurreição é uma
+            festividade religiosa e um feriado que celebra a
+            ressurreição de Jesus ocorrida no terceiro dia após
+            sua crucificação no Calvário, conforme o relato do Novo Testamento.
+          </p>
+          <a href="/html/feriados.html"><button class="btn_mais">Ler mais</button></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="container_preview">
+            <img src="/imgs/dias_das_maes_profile.jpg" class="img_perfil" />
+          </div>
+          <h1 class="title_slide">Dias das mães</h1>
+          <p>
+            O Dia das Mães é um dia para celebrar e agradecer a todas as mães pela dedicação,
+            amor e carinho que dão aos seus filhos diariamente.
+          </p>
+          <a href="/html/feriados.html"><button class="btn_mais">Ler mais</button></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="container_preview">
+            <img src="/imgs/festajunina_profile.webp" class="img_perfil" />
+          </div>
+          <h1 class="title_slide">Festa Junina</h1>
+          <p>
+            As festas juninas são comemorações que acontecem no mês de junho no Brasil.
+            Nela se comemoram três santos populares: Santo Antônio, São Pedro e São João.
+          </p>
+          <a href="/html/feriados.html"><button class="btn_mais">Ler mais</button></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_container">
+      <a href="https://github.com/marcioP457"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <h1 class="title_footer"></h1>
+  </footer>
+  <script>
+    // atualização do ano automaticamente
+    let t = new Date() //t = time
+    let y = t.getFullYear()    //y= years
+    document.querySelector(".title_footer").innerHTML = `&copy; Copyright  ${y}`
+  </script>
+</body>
+
+</html>
